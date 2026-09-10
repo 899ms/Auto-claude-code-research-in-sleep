@@ -10,6 +10,8 @@
 
 💡 *在 [Claude Code](https://docs.anthropic.com/en/docs/claude-code) / [Codex CLI](skills/skills-codex/) / [Cursor](docs/CURSOR_ADAPTATION.md) / [Trae](docs/TRAE_ARIS_RUNBOOK_CN.md) / [Antigravity](docs/ANTIGRAVITY_ADAPTATION_CN.md) / [GitHub Copilot CLI](docs/COPILOT_CLI_ADAPTATION.md) / [OpenClaw](docs/OPENCLAW_ADAPTATION.md) / [DeepSeek Harness](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/blob/dsh-aris/README_CN.md) 里以 skill-based workflow 用 ARIS，或用独立的 **[ARIS-Code](docs/ARIS-Code-README_CN.md)** CLI 完整版体验——任你选！*
 
+❗ ![IMPORTANT](https://img.shields.io/badge/IMPORTANT-red?style=flat-square) **codex-cli 0.154.0 删掉了 `codex mcp-server`——ARIS 所有审稿调用原来都走这个入口。对 ARIS 没有任何影响：** `codex` MCP 现在是 ARIS 自己用 `codex exec` 复写的桥接（`mcp-servers/codex-exec/`），工具名、返回形状一模一样，82 个 skill 零改动，`ultra` 档和按线程续聊都在。只需重新注册一次——**[已经装了？→ 快速开始 2b 步](#quick-start)** · **[新装 → 第 2 步](#quick-start)** · [更新说明](#whats-new)。
+
 🐋 **在 DeepSeek Harness 上，ARIS 是一个插件：** `dsh plugin --profile web add dsh-aris`（命令自己从 npm 拉包，无需先装什么——但 `pnpm` 必须在 `PATH` 里）—— 82 个技能零改动，审稿人仍是 Codex。安装与限制见 [`dsh-aris` 分支](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/blob/dsh-aris/README_CN.md)。
 
 🌱 *ARIS 是方法论，不是平台。重要的是科研工作流——带着它去任何地方。*
