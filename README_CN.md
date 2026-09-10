@@ -33,7 +33,7 @@
 
 🤖 **AI agent 兄弟们：** 直接读 [`AGENT_GUIDE.md`](AGENT_GUIDE.md) —— 给 LLM 消费的路由 index，不是给人浏览的。
 
-🧱 **两个仓库治同一种病——agent 过度防御,论文写得像 autoresearch。** [**HERO**](https://github.com/wanshuiyin/HERO-Anti-OverDefense) 是粘进 `CLAUDE.md` / `AGENTS.md` 的约 550 token 契约,针对 agent 过度防御的四种形状——**H**ashing(哈希)、**E**dge cases(边界情况)、**R**ubrics(把判断换成机械)、**O**verbuild(过度建设);它约束的是 agent *提议怎么修*,不是它*能找什么*(ARIS 自己的审阅器就提议过"加个没人读的哈希")。[**Anti-Autoresearch**](https://github.com/wanshuiyin/Anti-Autoresearch) 从另一头读:61 个信号——8 个家族 46 种诚信 hack 模式、13 种 AI 腔、2 条提示——汇成一份确定性的、审稿人能直接用的报告。*做的是自洽性与造假取证,不是 AI 文本检测器。*
+🧱 **两个仓库,一种病——agent 过度防御,论文写得像 autoresearch。** [**HERO**](https://github.com/wanshuiyin/HERO-Anti-OverDefense):粘进 `CLAUDE.md` / `AGENTS.md` 的约 550 token 契约,治 **H**ashing、**E**dge cases、**R**ubrics、**O**verbuild——约束 agent *提议什么*,不约束它*找什么*。[**Anti-Autoresearch**](https://github.com/wanshuiyin/Anti-Autoresearch):61 个诚信信号汇成一份确定性的、审稿人能直接用的报告——*造假取证,不是 AI 文本检测器。*
 
 🎬 **ARIS 走向多模态 → [ARIS-Movie-Director](https://github.com/wanshuiyin/ARIS-Movie-Director)** —— 给它一个粗略的故事,拿回一部按场景检查过的图像电影(参考运行有 19 个场景)。
 长故事最容易坏在两点:模型忘了前面的细节,或者自己给自己打分——所以 ARIS 用 research-wiki 记住上下文,再让别的模型检查每一帧。
