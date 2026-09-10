@@ -277,6 +277,7 @@ ARIS 读论文 → 找弱点 → 克隆代码 → 针对*那些*弱点用*那套
 
 > ⚠️ 凡涉及 skill 变更的条目:跑 `bash tools/smart_update.sh --apply` 拉取。
 
+- **2026-09-10** — ![FIX](https://img.shields.io/badge/FIX-2ea44f?style=flat-square) 🔌 **codex-cli 0.154 删掉了 `codex mcp-server`,`codex` MCP 要重新注册。** ARIS 所有审阅调用都走这个入口;0.154 起它会打开交互界面,MCP 握手直接失败。ARIS 自带了替身 `mcp-servers/codex-exec/server.py`:工具名、返回形状一模一样,底下跑 `codex exec`,skill 一行不改。跑一次:`claude mcp remove codex -s user && claude mcp add codex -s user -- python3 "$HOME/aris_repo/mcp-servers/codex-exec/server.py"`(写你 clone 的绝对路径),然后重启 Claude Code。0.153 上同样能用,升级前就可以换。OpenAI 官方给的替代是 Claude Code 插件,没有 `ultra` 档、不能按线程续聊,深审 skill 用不了。Cursor / Trae / Antigravity / Copilot CLI 的配置同一个 key,改成 `python3` + 这个路径,见各自适配文档。
 - **2026-09-07** — ![NEW](https://img.shields.io/badge/NEW-red?style=flat-square) 🧠 **默认审阅模型换成 `gpt-6-astra`。** 所有钉 `gpt-5.6-sol` 的审阅调用改钉 `gpt-6-astra`;两档 effort(七个深审 ultra、其余 xhigh)不变,执行者也不变——你在哪个 agent 里跑 ARIS 就是哪个。账号还没有这个模型?回退链会依次试 `gpt-5.6-sol`、`gpt-5.5`(都 xhigh),不用改配置。
 - **2026-09-06** — ![FIX](https://img.shields.io/badge/FIX-2ea44f?style=flat-square) 🧹 **安装器不再往每个项目塞 Copilot profile**([#431](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/issues/431),感谢 [@oblivion-1521](https://github.com/oblivion-1521))。八月起每次安装都会往你的 `.github/agents/` 放两个 Copilot 审稿人 profile 的软链接,不管你用不用——Claude Code 和 Codex 用户拿到的是死文件,提交上去还是坏链接。现在只在装了 `auto-review-loop` 时才部署;`--no-agent-profiles` 永久关掉(`--agent-profiles` 撤销)。下次重跑安装会顺手删掉以前生成的链接,你自己写的文件一律不动。
 - **2026-09-03** — ![FIX](https://img.shields.io/badge/FIX-2ea44f?style=flat-square) 📣 **论文是发布会,不是工作汇报**(规则采自 [anti-defensive-writing-Skill](https://github.com/Adkid-Zephyr/anti-defensive-writing-Skill),作者 [@Adkid-Zephyr](https://github.com/Adkid-Zephyr),觉得有用就 🌟)。写作契约新增四条:围绕真正的最强优势组织叙事;打不赢的指标不设为比赛;不占优的数字照样留在表里,证据支持时解释为目标差异或权衡,不支持就平实陈述、收窄主张——不写成认输,也不硬编权衡;每个实验必须有论证职责,没有就出主线;摘要引言按问题 → 缺口 → 思路 → 最硬的结果开场,结论不在最后一段突然自我否定。`/auto-paper-improvement-loop` 按同样标准挑毛病。收录在 [Awesome 社区](#awesome-community-skills)。
@@ -410,7 +411,8 @@ bash Auto-claude-code-research-in-sleep/tools/smart_update_codex.sh --local ~/.c
 # 2. 配置 Codex MCP（review 类 skill 需要）
 npm install -g @openai/codex
 codex setup                    # 提示选模型时选 gpt-6-astra
-claude mcp add codex -s user -- codex mcp-server
+claude mcp add codex -s user -- python3 /absolute/path/to/Auto-claude-code-research-in-sleep/mcp-servers/codex-exec/server.py   # 第 1 步 clone 下来的那个目录
+# （以前注册过 `codex mcp-server`？先 `claude mcp remove codex -s user`）
 
 # 3. 在 Claude Code 中使用
 claude
@@ -1317,8 +1319,9 @@ claude   # hooks 立即生效
 2. （仅 review 类 skill 需要）安装 [Codex CLI](https://github.com/openai/codex) 并配置为 MCP server：
    ```bash
    npm install -g @openai/codex
-   claude mcp add codex -s user -- codex mcp-server
+   claude mcp add codex -s user -- python3 "$HOME/aris_repo/mcp-servers/codex-exec/server.py"
    ```
+   路径就是你 ARIS clone 里的 `mcp-servers/codex-exec/server.py`——codex-cli 0.154 删掉了 `codex mcp-server`,这个桥接顶上。
 3. （仅工作流 3：论文写作需要）**LaTeX** 环境，含 `latexmk` 和 `pdfinfo`：
    ```bash
    # macOS
