@@ -101,9 +101,9 @@ cd claude-fleet && bash run.sh
 
 🚀 **从 科研 → 任何 "研究"**：[**ARIS-Anything**](https://github.com/wanshuiyin/ARIS-Anything) 把 ARIS 的五步 loop（plan / draft / 跨模型对抗审 / 迭代 / 持久化）从学术科研推广到非学术的结构化研究——投资尽调 / 法律研究 / 市场研究 / 自驱学习 / 调查新闻 / 工程复盘等。
 
-🔥 [**ARIS-Code CLI — 独立安装版**](docs/ARIS-Code-README_CN.md) · [English](docs/ARIS-Code-README_EN.md) | [⬇️ 下载](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/releases/latest) — **v0.4.20**：默认 Claude Opus 5，带 `fable` / `opus` / `sonnet` 别名和可用性链；工具输出自动折叠；`aris setup` 把你的 ChatGPT 订阅接成 Codex 审稿人；内置 81 个 skill。
+🔥 [**ARIS-Code CLI — 独立安装版**](docs/ARIS-Code-README_CN.md) · [English](docs/ARIS-Code-README_EN.md) | [⬇️ 下载](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/releases/latest) — **v0.4.24**：默认 Claude Opus 5，带 `fable` / `opus` / `sonnet` 别名和可用性链；工具输出自动折叠；`aris setup` 把你的 ChatGPT 订阅接成 Codex 审稿人；内置 81 个 skill。
 
-<details><summary>ARIS-Code —— 截图、v0.4.20 内容、逐版本详情、更早版本</summary>
+<details><summary>ARIS-Code —— 截图、头条、逐版本详情、更早版本</summary>
 
 <p align="center"><img src="docs/aris-code-banner.png" width="100%" alt="ARIS-Code CLI 终端 — Auto Research in Sleep"></p>
 
