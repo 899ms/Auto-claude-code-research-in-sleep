@@ -1,8 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "aris",
-  "version": "1.0.0",
-  "description": "82-skill research workflow: literature review, idea discovery, experiment design, paper writing, rebuttal and slides.",
+  "description": "ARIS research workflow as a Claude Code plugin: literature review, idea discovery, experiments, paper writing, rebuttal, slides — with a cross-model Codex reviewer. Run /aris:setup once after installing.",
   "author": {
     "name": "wanshuiyin",
     "url": "https://github.com/wanshuiyin"

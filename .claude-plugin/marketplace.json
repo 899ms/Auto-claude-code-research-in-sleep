@@ -12,7 +12,7 @@
     {
       "name": "aris",
       "source": "./",
-      "description": "The ARIS skill set as a plugin: 82 mainline skills under skills/. Skills-only payload — MCP servers (mcp-servers/), helper tools (tools/) and project templates stay in the repository.",
+      "description": "The ARIS skill set as a plugin — every mainline skill under skills/, plus /aris:setup, which registers the bundled Codex reviewer bridge (mcp-servers/codex-exec/) and points helper resolution at the plugin.",
       "author": {
         "name": "wanshuiyin",
         "url": "https://github.com/wanshuiyin"
