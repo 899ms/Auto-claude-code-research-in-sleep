@@ -255,7 +255,7 @@ ARIS reads the paper → finds its weaknesses → clones the codebase → genera
 /research-implement-feature "add KV-cache reuse to the decoder" — base repo: https://github.com/org/project
 ```
 
-A minimal end-to-end path first, stubs labeled, then one feature at a time with a runnable check each. Choices the request left open that affect interfaces or what a result means go into an assumption ledger *before* the code that depends on them; at the end a different model family reads the raw diff for the ones that went undeclared (and says so if that review was unavailable). The report lists passed, blocked and deferred steps — passing checks does not mean the method works, and it never claims it does.
+Spine first, then one feature at a time, each with a runnable check. Every choice the request left open is written to an assumption ledger before the code that depends on it, and a different model family then reads the raw diff for the ones that went undeclared. It reports "the checks passed", never "the method works". Contributed by [@heroarmor](https://github.com/heroarmor).
 
 **🔥 Rebuttal mode** — reviews just dropped? Don't panic. ARIS reads every concern, builds a strategy, and drafts a rebuttal that's grounded, structured, and under the character limit:
 
