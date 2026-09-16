@@ -10,6 +10,8 @@
 
 💡 *在 [Claude Code](https://docs.anthropic.com/en/docs/claude-code) / [Codex CLI](skills/skills-codex/) / [Cursor](docs/CURSOR_ADAPTATION.md) / [Trae](docs/TRAE_ARIS_RUNBOOK_CN.md) / [Antigravity](docs/ANTIGRAVITY_ADAPTATION_CN.md) / [GitHub Copilot CLI](docs/COPILOT_CLI_ADAPTATION.md) / [OpenClaw](docs/OPENCLAW_ADAPTATION.md) / [DeepSeek Harness](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/blob/dsh-aris/README_CN.md) 里以 skill-based workflow 用 ARIS，或用独立的 **[ARIS-Code](docs/ARIS-Code-README_CN.md)** CLI 完整版体验——任你选！执行者干活，另一个独立模型（默认 Codex MCP）审稿；[替代模型组合](#alternative-model-combinations)不需要 Claude 或 OpenAI API，[ModelScope](docs/MODELSCOPE_GUIDE.md) 有免费档。*
 
+📦 *上面是直接安装 skills 的用法。想一条命令装好?ARIS 也提供插件和独立 CLI:* [![Claude Code plugin](https://img.shields.io/badge/Claude_Code-plugin-D97757?style=flat&logo=anthropic&logoColor=white)](#plugins) · [![Codex CLI plugin](https://img.shields.io/badge/Codex_CLI-plugin-000000?style=flat&logo=openai&logoColor=white)](#plugins) · [![DeepSeek Harness plugin](https://img.shields.io/badge/DeepSeek_Harness-dsh--aris-4D6BFE?style=flat)](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/blob/dsh-aris/README_CN.md) · [![ARIS-Code CLI](https://img.shields.io/badge/ARIS--Code-独立_CLI-2E7D32?style=flat&logo=rust&logoColor=white)](docs/ARIS-Code-README_CN.md)
+
 ❗ ![IMPORTANT](https://img.shields.io/badge/IMPORTANT-red?style=flat-square) **codex-cli 0.154.0 删掉了 `codex mcp-server`——ARIS 所有审稿调用原来都走这个入口。对 ARIS 没有任何影响：** `codex` MCP 现在是 ARIS 自己用 `codex exec` 复写的桥接（`mcp-servers/codex-exec/`），工具名、返回形状一模一样，82 个 skill 零改动，`ultra` 档和按线程续聊都在。只需重新注册一次——**[已经装了？→ 快速开始 2b 步](#quick-start)** · **[新装 → 第 2 步](#quick-start)** · [更新说明](#whats-new)。
 
 🎯 **准备 2026 AI 秋招？** → [**🌐 ARIS-in-AI-Offer**](https://wanshuiyin.github.io/ARIS-in-AI-Offer/) —— **34 篇双语 ML / LLM / 多模态 / 生成式 / Agent 面试 cheat sheet，一页收齐**：可搜索、中/EN 切换、深色模式、本机记「已读」，存到手机里刷。每篇 = 公式推导 + 从零 PyTorch + 25 高频面试题（L1 / L2 / L3），全部由 ARIS 的 `/render-html` 自动生成。[GitHub repo](https://github.com/wanshuiyin/ARIS-in-AI-Offer) · [English](https://github.com/wanshuiyin/ARIS-in-AI-Offer/blob/main/README.md)。**希望大家秋招的时候轻松一点 🌱**
@@ -1355,6 +1357,8 @@ claude   # hooks 立即生效
 >
 > 🤖 **Codex mirror 路线：** Claude 主线继续使用 `install_aris.sh` / `smart_update.sh`。Codex 原生项目安装请用 `install_aris_codex.sh`，Codex copy 安装更新请用 `smart_update_codex.sh`。
 >
+<a id="plugins"></a>
+
 > 🧩 **插件路线（仅 Claude Code）：** 先 `claude plugin marketplace add wanshuiyin/Auto-claude-code-research-in-sleep`，再 `claude plugin install aris@aris`，然后**跑一次 `/aris:setup`**——它把插件里自带的 Codex 审稿桥接注册成 MCP，并让 helper 解析指向插件目录；之后重启 Claude Code。全部 skill 一次到位（不用克隆、不用 symlink、不做分组选择），输入时带前缀：`/aris:idea-discovery`、`/aris:paper-writing`。更新：`claude plugin update aris@aris`。**Codex CLI** 把同一个仓库当插件读，拿到的是 Codex 原生镜像：`codex plugin marketplace add wanshuiyin/Auto-claude-code-research-in-sleep`，再 `codex plugin add aris@aris`，然后把 helper 解析指过去一次——`printf '%s\n' ~/.codex/plugins/cache/aris/aris/local > ~/.aris/repo`（就是 `codex plugin list` 显示的路径）。要分组选择或 `.aris/installed-skills.txt` manifest，仍用上面的安装器。
 
 ```bash
