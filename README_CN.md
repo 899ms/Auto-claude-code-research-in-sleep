@@ -12,7 +12,7 @@
 
 💡 *在 [Claude Code](https://docs.anthropic.com/en/docs/claude-code) / [Codex CLI](skills/skills-codex/) / [Cursor](docs/CURSOR_ADAPTATION.md) / [Trae](docs/TRAE_ARIS_RUNBOOK_CN.md) / [Antigravity](docs/ANTIGRAVITY_ADAPTATION_CN.md) / [GitHub Copilot CLI](docs/COPILOT_CLI_ADAPTATION.md) / [OpenClaw](docs/OPENCLAW_ADAPTATION.md) / [DeepSeek Harness](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/blob/dsh-aris/README_CN.md) 里以 skill-based workflow 用 ARIS——任你选！执行者干活，另一个独立模型（默认 Codex MCP）审稿；[替代模型组合](#alternative-model-combinations)不需要 Claude 或 OpenAI API，[ModelScope](docs/MODELSCOPE_GUIDE.md) 有免费档。*
 
-📦 *上面是直接安装 skills 的用法。想一条命令装好?ARIS 也提供插件和独立 CLI:* [![Claude Code plugin](https://img.shields.io/badge/Claude_Code-plugin-D97757?style=flat&logo=anthropic&logoColor=white)](#plugins) · [![Codex CLI plugin](https://img.shields.io/badge/Codex_CLI-plugin-000000?style=flat&logo=openai&logoColor=white)](#plugins) · [![DeepSeek Harness plugin](https://img.shields.io/badge/DeepSeek_Harness-dsh--aris-4D6BFE?style=flat)](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/blob/dsh-aris/README_CN.md) · [![ARIS-Code CLI 下载量](https://img.shields.io/github/downloads/wanshuiyin/Auto-claude-code-research-in-sleep/total?style=flat&logo=rust&logoColor=white&label=ARIS-Code%20%E7%8B%AC%E7%AB%8B%20CLI&color=2E7D32)](docs/ARIS-Code-README_CN.md)
+📦 *上面是直接安装 skills 的用法。想一条命令装好?ARIS 也提供独立 CLI 和插件:* [![ARIS-Code CLI 下载量](https://img.shields.io/github/downloads/wanshuiyin/Auto-claude-code-research-in-sleep/total?style=flat&logo=rust&logoColor=white&label=ARIS-Code%20%E7%8B%AC%E7%AB%8B%20CLI&color=2E7D32)](docs/ARIS-Code-README_CN.md) · [![Claude Code plugin](https://img.shields.io/badge/Claude_Code-plugin-D97757?style=flat&logo=anthropic&logoColor=white)](#plugins) · [![Codex CLI plugin](https://img.shields.io/badge/Codex_CLI-plugin-000000?style=flat&logo=openai&logoColor=white)](#plugins) · [![DeepSeek Harness plugin](https://img.shields.io/badge/DeepSeek_Harness-dsh--aris-4D6BFE?style=flat)](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/blob/dsh-aris/README_CN.md)
 
 ❗ ![IMPORTANT](https://img.shields.io/badge/IMPORTANT-red?style=flat-square) **codex-cli 0.154.0 删掉了 `codex mcp-server`——ARIS 所有审稿调用原来都走这个入口。对 ARIS 没有任何影响：** `codex` MCP 现在是 ARIS 自己用 `codex exec` 复写的桥接（`mcp-servers/codex-exec/`），工具名、返回形状一模一样，82 个 skill 零改动，`ultra` 档和按线程续聊都在。只需重新注册一次——**[已经装了？→ 快速开始 2b 步](#quick-start)** · **[新装 → 第 2 步](#quick-start)** · [更新说明](#whats-new)。
 
@@ -29,26 +29,6 @@
 [![ARIS-Anything](https://img.shields.io/github/stars/wanshuiyin/ARIS-Anything?style=flat&logo=github&logoColor=white&label=ARIS-Anything&color=E65100)](https://github.com/wanshuiyin/ARIS-Anything) —— 把五步 loop(计划 · 起草 · 对抗审 · 迭代 · 持久化)用到任何结构化研究:投资尽调、法律、市场、自驱学习、工程复盘。
 
 [![ARIS-Monitor](https://img.shields.io/badge/ARIS--Monitor-built--in-455A64?style=flat&logo=apple&logoColor=white)](aris-monitor/) —— 常驻置顶的 macOS 小窗,哪个会话在等你批准就亮 🔴,点一下跳过去;`cd aris-monitor && ./run.sh`。窗口多的话,[Claude Fleet](https://github.com/tianyilt/claude-fleet)(by [@tianyilt](https://github.com/tianyilt))是完整看板。
-
-<details>
-<summary><b>🖼️ 预览</b> —— Claude Fleet 网页看板 &amp; ARIS-Monitor 悬浮小窗(自带)</summary>
-
-<table align="center" width="100%">
-<tr>
-<td width="66%" align="center" valign="top">
-<a href="https://github.com/tianyilt/claude-fleet"><img src="assets/claude-fleet-preview.png" width="100%" alt="Claude Fleet — 同时盯住一堆并行的 Claude Code / Codex 窗口的数据看板（triage / Focus / 全文搜索 / skill·memory 分析）"></a>
-</td>
-<td width="34%" align="center" valign="top">
-<a href="aris-monitor/"><img src="aris-monitor/assets/screenshot.png" width="100%" alt="ARIS-Monitor — 极简置顶悬浮小窗，盯住哪个 Claude Code 会话在等你授权（all-clear 与红色 ATTENTION 双态）"></a>
-</td>
-</tr>
-<tr>
-<td align="center"><b><a href="https://github.com/tianyilt/claude-fleet">Claude Fleet</a></b> · 全功能网页看板</td>
-<td align="center"><b><a href="aris-monitor/">ARIS-Monitor</a></b> · 极简悬浮小窗(自带)</td>
-</tr>
-</table>
-
-</details>
 
 🔥 [**ARIS-Code CLI — 独立安装版**](docs/ARIS-Code-README_CN.md) · [English](docs/ARIS-Code-README_EN.md) | [⬇️ 下载](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/releases/latest) — **v0.4.24**：默认 Claude Opus 5，带 `fable` / `opus` / `sonnet` 别名和可用性链；工具输出自动折叠；`aris setup` 把你的 ChatGPT 订阅接成 Codex 审稿人；内置 81 个 skill。
 

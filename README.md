@@ -12,7 +12,7 @@
 
 💡 *Use ARIS as a skill-based workflow in [Claude Code](https://docs.anthropic.com/en/docs/claude-code) / [Codex CLI](skills/skills-codex/) / [Cursor](docs/CURSOR_ADAPTATION.md) / [Trae](docs/TRAE_ARIS_RUNBOOK_EN.md) / [Antigravity](docs/ANTIGRAVITY_ADAPTATION.md) / [GitHub Copilot CLI](docs/COPILOT_CLI_ADAPTATION.md) / [OpenClaw](docs/OPENCLAW_ADAPTATION.md) / [DeepSeek Harness](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/tree/dsh-aris#readme) — enjoy any way you like! The executor drives, an independent model (Codex MCP by default) reviews; [alternative model combinations](#alternative-model-combinations) need no Claude or OpenAI API, and [ModelScope](docs/MODELSCOPE_GUIDE.md) gives a free tier.*
 
-📦 *Those are the skills installed directly. Want it in one command? ARIS also ships as plugins and as a standalone CLI:* [![Claude Code plugin](https://img.shields.io/badge/Claude_Code-plugin-D97757?style=flat&logo=anthropic&logoColor=white)](#plugins) · [![Codex CLI plugin](https://img.shields.io/badge/Codex_CLI-plugin-000000?style=flat&logo=openai&logoColor=white)](#plugins) · [![DeepSeek Harness plugin](https://img.shields.io/badge/DeepSeek_Harness-dsh--aris-4D6BFE?style=flat)](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/tree/dsh-aris#readme) · [![ARIS-Code CLI downloads](https://img.shields.io/github/downloads/wanshuiyin/Auto-claude-code-research-in-sleep/total?style=flat&logo=rust&logoColor=white&label=ARIS-Code%20standalone%20CLI&color=2E7D32)](docs/ARIS-Code-README_EN.md)
+📦 *Those are the skills installed directly. Want it in one command? ARIS also ships as a standalone CLI and as plugins:* [![ARIS-Code CLI downloads](https://img.shields.io/github/downloads/wanshuiyin/Auto-claude-code-research-in-sleep/total?style=flat&logo=rust&logoColor=white&label=ARIS-Code%20standalone%20CLI&color=2E7D32)](docs/ARIS-Code-README_EN.md) · [![Claude Code plugin](https://img.shields.io/badge/Claude_Code-plugin-D97757?style=flat&logo=anthropic&logoColor=white)](#plugins) · [![Codex CLI plugin](https://img.shields.io/badge/Codex_CLI-plugin-000000?style=flat&logo=openai&logoColor=white)](#plugins) · [![DeepSeek Harness plugin](https://img.shields.io/badge/DeepSeek_Harness-dsh--aris-4D6BFE?style=flat)](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/tree/dsh-aris#readme)
 
 ❗ ![IMPORTANT](https://img.shields.io/badge/IMPORTANT-red?style=flat-square) **codex-cli 0.154.0 removed `codex mcp-server` — the entry point every ARIS reviewer call used. No impact on ARIS:** the `codex` MCP server is now ARIS's own bridge over `codex exec` (`mcp-servers/codex-exec/`), same tools, same results, all 82 skills unchanged, `ultra` and per-thread resume intact. One re-registration is all it takes — **[already installed? → Quick Start step 2b](#quick-start)** · **[new install → step 2](#quick-start)** · [what changed](#whats-new).
 
@@ -29,26 +29,6 @@
 [![ARIS-Anything](https://img.shields.io/github/stars/wanshuiyin/ARIS-Anything?style=flat&logo=github&logoColor=white&label=ARIS-Anything&color=E65100)](https://github.com/wanshuiyin/ARIS-Anything) — the five-step loop (plan · draft · adversarial review · iterate · persist) for any structured research: due diligence, legal, market, self-study, engineering post-mortems.
 
 [![ARIS-Monitor](https://img.shields.io/badge/ARIS--Monitor-built--in-455A64?style=flat&logo=apple&logoColor=white)](aris-monitor/) — a tiny always-on-top macOS widget that lights up 🔴 when a session waits for your approval; `cd aris-monitor && ./run.sh`. Many windows? [Claude Fleet](https://github.com/tianyilt/claude-fleet) by [@tianyilt](https://github.com/tianyilt) is the full dashboard.
-
-<details>
-<summary><b>🖼️ Preview</b> — Claude Fleet dashboard (full web) &amp; ARIS-Monitor widget (minimal, built-in)</summary>
-
-<table align="center" width="100%">
-<tr>
-<td width="66%" align="center" valign="top">
-<a href="https://github.com/tianyilt/claude-fleet"><img src="assets/claude-fleet-preview.png" width="100%" alt="Claude Fleet — full local web dashboard for many concurrent Claude Code / Codex windows (triage, Focus, full-text search, skill/memory analytics)"></a>
-</td>
-<td width="34%" align="center" valign="top">
-<a href="aris-monitor/"><img src="aris-monitor/assets/screenshot.png" width="100%" alt="ARIS-Monitor — minimal always-on-top floating widget showing which Claude Code sessions need approval (calm all-clear vs red ATTENTION)"></a>
-</td>
-</tr>
-<tr>
-<td align="center"><b><a href="https://github.com/tianyilt/claude-fleet">Claude Fleet</a></b> · 全功能网页看板</td>
-<td align="center"><b><a href="aris-monitor/">ARIS-Monitor</a></b> · 极简悬浮小窗(自带)</td>
-</tr>
-</table>
-
-</details>
 
 🔥 [**ARIS-Code CLI — 独立安装版**](docs/ARIS-Code-README_CN.md) · [English](docs/ARIS-Code-README_EN.md) | [⬇️ Download](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/releases/latest) · [![Downloads](https://img.shields.io/github/downloads/wanshuiyin/Auto-claude-code-research-in-sleep/total?style=flat-square&color=brightgreen)](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/releases) — **v0.4.24**: Claude Opus 5 as the default with `fable` / `opus` / `sonnet` aliases and an availability chain, tool output folded to a few lines, `aris setup` wires your ChatGPT subscription in as the Codex reviewer, 81 bundled skills.
 
