@@ -249,6 +249,14 @@ ARIS reads the paper → finds its weaknesses → clones the codebase → genera
 
 > Mix and match: `ref paper` only = "what can be improved?", `base repo` only = "what can I build with this code?", both = "improve *this* paper using *this* code."
 
+**🛠️ Build a feature** — already know what to build?
+
+```
+/research-implement-feature "add KV-cache reuse to the decoder" — base repo: https://github.com/org/project
+```
+
+A minimal end-to-end path first, stubs labeled, then one feature at a time with a runnable check each. Choices the request left open that affect interfaces or what a result means go into an assumption ledger *before* the code that depends on them; at the end a different model family reads the raw diff for the ones that went undeclared (and says so if that review was unavailable). The report lists passed, blocked and deferred steps — passing checks does not mean the method works, and it never claims it does.
+
 **🔥 Rebuttal mode** — reviews just dropped? Don't panic. ARIS reads every concern, builds a strategy, and drafts a rebuttal that's grounded, structured, and under the character limit:
 
 ```
