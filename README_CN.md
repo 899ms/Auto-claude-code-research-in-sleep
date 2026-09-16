@@ -16,12 +16,17 @@
 
 ❗ ![IMPORTANT](https://img.shields.io/badge/IMPORTANT-red?style=flat-square) **codex-cli 0.154.0 删掉了 `codex mcp-server`——ARIS 所有审稿调用原来都走这个入口。对 ARIS 没有任何影响：** `codex` MCP 现在是 ARIS 自己用 `codex exec` 复写的桥接（`mcp-servers/codex-exec/`），工具名、返回形状一模一样，82 个 skill 零改动，`ultra` 档和按线程续聊都在。只需重新注册一次——**[已经装了？→ 快速开始 2b 步](#quick-start)** · **[新装 → 第 2 步](#quick-start)** · [更新说明](#whats-new)。
 
-🎯 **准备 2026 AI 秋招？** → [**🌐 ARIS-in-AI-Offer**](https://wanshuiyin.github.io/ARIS-in-AI-Offer/) —— **34 篇双语 ML / LLM / 多模态 / 生成式 / Agent 面试 cheat sheet，一页收齐**：可搜索、中/EN 切换、深色模式、本机记「已读」，存到手机里刷。每篇 = 公式推导 + 从零 PyTorch + 25 高频面试题（L1 / L2 / L3），全部由 ARIS 的 `/render-html` 自动生成。[GitHub repo](https://github.com/wanshuiyin/ARIS-in-AI-Offer) · [English](https://github.com/wanshuiyin/ARIS-in-AI-Offer/blob/main/README.md)。**希望大家秋招的时候轻松一点 🌱**
+**🧩 ARIS 家族** —— 同一套方法,干别的活。每个一行,细节在各自仓库。
 
-🧱 **两个仓库,一种病——agent 过度防御,论文写得像 autoresearch。** [**HERO**](https://github.com/wanshuiyin/HERO-Anti-OverDefense):粘进 `CLAUDE.md` / `AGENTS.md` 的约 550 token 契约,治 **H**ashing、**E**dge cases、**R**ubrics、**O**verbuild——约束 agent *提议什么*,不约束它*找什么*。[**Anti-Autoresearch**](https://github.com/wanshuiyin/Anti-Autoresearch):61 个诚信信号汇成一份确定性的、审稿人能直接用的报告——*造假取证,不是 AI 文本检测器。*
+- [![ARIS-in-AI-Offer](https://img.shields.io/github/stars/wanshuiyin/ARIS-in-AI-Offer?style=flat&logo=github&logoColor=white&label=ARIS--in--AI--Offer&color=1E88E5)](https://github.com/wanshuiyin/ARIS-in-AI-Offer) —— 34 篇双语 ML / LLM 面试 cheat sheet [一页收齐](https://wanshuiyin.github.io/ARIS-in-AI-Offer/):公式推导、从零 PyTorch、每篇 25 题(L1 / L2 / L3),全部由 `/render-html` 生成。希望大家秋招轻松一点 🌱
+- [![HERO](https://img.shields.io/github/stars/wanshuiyin/HERO-Anti-OverDefense?style=flat&logo=github&logoColor=white&label=HERO&color=2E7D32)](https://github.com/wanshuiyin/HERO-Anti-OverDefense) —— 粘进 `CLAUDE.md` / `AGENTS.md` 的约 550 token 契约,治 agent 过度防御的四种形状(哈希、边界情况、评分表、过度建设);约束它*提议什么*,不约束它*找什么*。
+- [![Anti-Autoresearch](https://img.shields.io/github/stars/wanshuiyin/Anti-Autoresearch?style=flat&logo=github&logoColor=white&label=Anti--Autoresearch&color=B71C1C)](https://github.com/wanshuiyin/Anti-Autoresearch) —— 61 个诚信信号汇成一份确定性的、审稿人能直接用的报告;做的是造假取证,不是 AI 文本检测。
+- [![ARIS-Movie-Director](https://img.shields.io/github/stars/wanshuiyin/ARIS-Movie-Director?style=flat&logo=github&logoColor=white&label=ARIS--Movie--Director&color=6A1B9A)](https://github.com/wanshuiyin/ARIS-Movie-Director) —— 给一个粗略故事,产出一部逐格讲述的定格电影,每一幕都由另一个模型审过;同一套流程也画干净的方法图(`/method-figure`)。
+- [![ARIS-Anything](https://img.shields.io/github/stars/wanshuiyin/ARIS-Anything?style=flat&logo=github&logoColor=white&label=ARIS--Anything&color=E65100)](https://github.com/wanshuiyin/ARIS-Anything) —— 把五步 loop(计划 · 起草 · 对抗审 · 迭代 · 持久化)用到任何结构化研究:投资尽调、法律、市场、自驱学习、工程复盘。
+- [![ARIS-Monitor](https://img.shields.io/badge/ARIS--Monitor-built--in-455A64?style=flat&logo=apple&logoColor=white)](aris-monitor/) —— 常驻置顶的 macOS 小窗,哪个会话在等你批准就亮 🔴,点一下跳过去;`cd aris-monitor && ./run.sh`。窗口多的话,[Claude Fleet](https://github.com/tianyilt/claude-fleet)(by [@tianyilt](https://github.com/tianyilt))是完整看板。
 
-🎬 **ARIS 走向多模态 → [ARIS-Movie-Director](https://github.com/wanshuiyin/ARIS-Movie-Director)** —— 给它一个粗略的故事,拿回一部按场景检查过的图像电影(参考运行有 19 个场景)。
-长故事最容易坏在两点:模型忘了前面的细节,或者自己给自己打分——所以 ARIS 用 research-wiki 记住上下文,再让别的模型检查每一帧。
+<details>
+<summary>🖼️ <b>预览</b> —— Movie-Director 方法图与参考片帧 · Claude Fleet 看板与 ARIS-Monitor 小窗</summary>
 
 <details>
 <summary>🗺️ <b>方法图</b> —— 故事梗概 → 可信源头 → 逐格受审螺旋 → 组装发布,一张图看全</summary>
@@ -34,8 +39,6 @@
 
 </details>
 
-> 🧭 *同一套流程也能画干净的方法图 / 流程图——上面这张图就是它做出来的。入口在 **[ARIS-Movie-Director](https://github.com/wanshuiyin/ARIS-Movie-Director)**:[`/movie-pipeline`](https://github.com/wanshuiyin/ARIS-Movie-Director/blob/main/skills/movie-pipeline/SKILL.md) 和 [`/method-figure`](https://github.com/wanshuiyin/ARIS-Movie-Director/blob/main/skills/method-figure/SKILL.md),后者就是生成这张图的 skill。*
-
 <details>
 <summary>🎞️ <i>参考片里的几帧 —— 故事自身的诚实度 beat：一次 <b>号称 <code>+6.2</code></b> 实则 <b>只动了 <code>+1.4</code></b> 的 run。</i> &nbsp;<b><a href="https://wanshuiyin.github.io/ARIS-Movie-Director/comic/">▶ 浏览器看全部 19 个场景 →</a></b></summary>
 
@@ -46,18 +49,6 @@
 </tr></table>
 
 </details>
-
-![ARIS Logo](docs/aris_logo.svg)
-
-![Hero](docs/hero_combined.svg)
-
-[English](README.md) | 中文版
-
-> 🌙 **让 Claude Code 在你睡觉时做科研。** 醒来发现论文已被打分、弱点已被定位、实验已跑完、叙事已重写——全自动。
->
-> 🪶 **极致轻量——无基础设施，零锁定。** 整个 skill 层就是纯 Markdown 文件。没有框架要学、没有数据库要维护、没有 Docker 要配、没有守护进程要看管。每个 skill 就是一个 `SKILL.md`，任何 LLM 都能读懂——换成 [Codex CLI](skills/skills-codex/)、[OpenClaw](docs/OPENCLAW_ADAPTATION.md)、[Cursor](docs/CURSOR_ADAPTATION.md)、[Trae](docs/TRAE_ARIS_RUNBOOK_CN.md)、[Antigravity](docs/ANTIGRAVITY_ADAPTATION_CN.md)、[Copilot CLI](docs/COPILOT_CLI_ADAPTATION.md)、Windsurf 或者你自己的 agent，工作流照样跑。Fork 它、改写它、适配到你的技术栈。
-
-🛰 **盯住你的 agent 窗口** —— [Claude Fleet](https://github.com/tianyilt/claude-fleet)(by [@tianyilt](https://github.com/tianyilt),本地只读看板,同时盯一堆并行的 Claude Code / Codex 窗口 + 全文搜 transcript,好用点个 ⭐),或更轻的自带 [ARIS-Monitor](aris-monitor/)(macOS 置顶小窗,谁在等你授权就亮 🔴,点一行跳过去)。
 
 <details>
 <summary><b>🖼️ 预览</b> —— Claude Fleet 网页看板 &amp; ARIS-Monitor 悬浮小窗(自带)</summary>
@@ -79,27 +70,7 @@
 
 </details>
 
-<details>
-<summary><b>几秒跑起来</b> —— ARIS-Monitor（5s）/ Claude Fleet（30s）</summary>
-
-**ARIS-Monitor** —— 就在本仓库，不用 clone / 不装依赖 / 不开浏览器:
-
-```bash
-cd aris-monitor && ./run.sh
-# 右上角冒出一个无边框悬浮窗;点一行直接跳到那个终端
-```
-
-**Claude Fleet** —— 全功能网页看板:
-
-```bash
-git clone https://github.com/tianyilt/claude-fleet
-cd claude-fleet && bash run.sh
-# 浏览器打开 http://127.0.0.1:7878
-```
-
 </details>
-
-🚀 **从 科研 → 任何 "研究"**：[**ARIS-Anything**](https://github.com/wanshuiyin/ARIS-Anything) 把 ARIS 的五步 loop（plan / draft / 跨模型对抗审 / 迭代 / 持久化）从学术科研推广到非学术的结构化研究——投资尽调 / 法律研究 / 市场研究 / 自驱学习 / 调查新闻 / 工程复盘等。
 
 🔥 [**ARIS-Code CLI — 独立安装版**](docs/ARIS-Code-README_CN.md) · [English](docs/ARIS-Code-README_EN.md) | [⬇️ 下载](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/releases/latest) — **v0.4.24**：默认 Claude Opus 5，带 `fable` / `opus` / `sonnet` 别名和可用性链；工具输出自动折叠；`aris setup` 把你的 ChatGPT 订阅接成 Codex 审稿人；内置 81 个 skill。
 
