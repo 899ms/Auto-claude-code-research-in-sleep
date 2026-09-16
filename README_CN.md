@@ -101,22 +101,13 @@ cd claude-fleet && bash run.sh
 
 🚀 **从 科研 → 任何 "研究"**：[**ARIS-Anything**](https://github.com/wanshuiyin/ARIS-Anything) 把 ARIS 的五步 loop（plan / draft / 跨模型对抗审 / 迭代 / 持久化）从学术科研推广到非学术的结构化研究——投资尽调 / 法律研究 / 市场研究 / 自驱学习 / 调查新闻 / 工程复盘等。
 
-🔥 [**ARIS-Code CLI — 独立安装版**](docs/ARIS-Code-README_CN.md) · [English](docs/ARIS-Code-README_EN.md) | [⬇️ 下载](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/releases/latest)
+🔥 [**ARIS-Code CLI — 独立安装版**](docs/ARIS-Code-README_CN.md) · [English](docs/ARIS-Code-README_EN.md) | [⬇️ 下载](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/releases/latest) — **v0.4.20**：默认 Claude Opus 5，带 `fable` / `opus` / `sonnet` 别名和可用性链；工具输出自动折叠；`aris setup` 把你的 ChatGPT 订阅接成 Codex 审稿人；内置 81 个 skill。
 
-<table>
-<tr>
-<td valign="top" width="60%">
+<details><summary>ARIS-Code —— 截图、v0.4.20 内容、逐版本详情、更早版本</summary>
+
+<p align="center"><img src="docs/aris-code-banner.png" width="100%" alt="ARIS-Code CLI 终端 — Auto Research in Sleep"></p>
 
 📰 **ARIS-Code v0.4.20**（2026-06）—— 最新是 **bug-fix 补丁**（Codex 排查出的 7 个用户可见修复：短 REPL 回复、粘连段落、CJK 表格、记住的 executor 模型、Esc 等；[#299](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/issues/299)）。头牌特性：**v0.4.18 —— 默认模型 Claude Opus 4.8**（计费已修正 + 可用性 fallback）和 **v0.4.17 —— MCP 版本**（`mcpServers` 驱动真实工具调度；**跨模型对抗审无需 OpenAI API key** —— `aris setup` 一步把你的 **ChatGPT 订阅**经 *Codex MCP* 接成 reviewer）。收官 16 个 release 打磨（v0.4.5 → v0.4.20）；逐版本详情见下。贡献者：[@GetIT-Sunday](https://github.com/GetIT-Sunday)、[@Anduin9527](https://github.com/Anduin9527)、[@GO-player-hhy](https://github.com/GO-player-hhy)、[@Jxy-yxJ](https://github.com/Jxy-yxJ)、[@screw-44](https://github.com/screw-44)、[@StevenUST](https://github.com/StevenUST)、[@opposj](https://github.com/opposj)、[@ShijunLei-cn](https://github.com/ShijunLei-cn)、[@algojogacor](https://github.com/algojogacor)。
-
-</td>
-<td valign="top" width="40%">
-
-<img src="docs/aris-code-banner.png" width="100%" alt="ARIS-Code CLI 终端 — Auto Research in Sleep">
-
-</td>
-</tr>
-</table>
 
 > <details><summary>逐版本详情（v0.4.5 → v0.4.20）</summary>
 >
@@ -164,6 +155,8 @@ cd claude-fleet && bash run.sh
 > **v0.4.1** (2026-04-15) — Plan 模式 + Ctrl+C 协作中断 + 自动重试 (429/5xx) | 多文件 Memory
 >
 > </details>
+
+</details>
 
 > 💭 **为什么不用单模型自我博弈？** 用 Claude Code 的 subagent 或 agent team 同时做执行和审稿在技术上可行，但容易陷入**局部最优**——同一个模型审自己的输出会产生盲区。
 >
