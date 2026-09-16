@@ -18,10 +18,6 @@
 
 🎯 **准备 2026 AI 秋招？** → [**🌐 ARIS-in-AI-Offer**](https://wanshuiyin.github.io/ARIS-in-AI-Offer/) —— **34 篇双语 ML / LLM / 多模态 / 生成式 / Agent 面试 cheat sheet，一页收齐**：可搜索、中/EN 切换、深色模式、本机记「已读」，存到手机里刷。每篇 = 公式推导 + 从零 PyTorch + 25 高频面试题（L1 / L2 / L3），全部由 ARIS 的 `/render-html` 自动生成。[GitHub repo](https://github.com/wanshuiyin/ARIS-in-AI-Offer) · [English](https://github.com/wanshuiyin/ARIS-in-AI-Offer/blob/main/README.md)。**希望大家秋招的时候轻松一点 🌱**
 
-🐋 **在 DeepSeek Harness 上，ARIS 是一个插件：** `dsh plugin --profile web add dsh-aris`（命令自己从 npm 拉包，无需先装什么——但 `pnpm` 必须在 `PATH` 里）—— 82 个技能零改动，审稿人仍是 Codex。安装与限制见 [`dsh-aris` 分支](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/blob/dsh-aris/README_CN.md)。
-
-🤖 **AI agent 兄弟们：** 直接读 [`AGENT_GUIDE.md`](AGENT_GUIDE.md) —— 给 LLM 消费的路由 index，不是给人浏览的。
-
 🧱 **两个仓库,一种病——agent 过度防御,论文写得像 autoresearch。** [**HERO**](https://github.com/wanshuiyin/HERO-Anti-OverDefense):粘进 `CLAUDE.md` / `AGENTS.md` 的约 550 token 契约,治 **H**ashing、**E**dge cases、**R**ubrics、**O**verbuild——约束 agent *提议什么*,不约束它*找什么*。[**Anti-Autoresearch**](https://github.com/wanshuiyin/Anti-Autoresearch):61 个诚信信号汇成一份确定性的、审稿人能直接用的报告——*造假取证,不是 AI 文本检测器。*
 
 🎬 **ARIS 走向多模态 → [ARIS-Movie-Director](https://github.com/wanshuiyin/ARIS-Movie-Director)** —— 给它一个粗略的故事,拿回一部按场景检查过的图像电影(参考运行有 19 个场景)。
