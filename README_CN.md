@@ -18,12 +18,17 @@
 
 **🧩 ARIS 家族** —— 同一套方法,干别的活。每个一行,细节在各自仓库。
 
-- [![ARIS-in-AI-Offer](https://img.shields.io/github/stars/wanshuiyin/ARIS-in-AI-Offer?style=flat&logo=github&logoColor=white&label=ARIS-in-AI-Offer&color=1E88E5)](https://github.com/wanshuiyin/ARIS-in-AI-Offer) —— **EasyAIOffer**:34 篇双语 ML / LLM 面试 cheat sheet [一页收齐](https://wanshuiyin.github.io/ARIS-in-AI-Offer/):公式推导、从零 PyTorch、每篇 25 题(L1 / L2 / L3),全部由 `/render-html` 生成。希望大家秋招轻松一点 🌱
-- [![HERO](https://img.shields.io/github/stars/wanshuiyin/HERO-Anti-OverDefense?style=flat&logo=github&logoColor=white&label=HERO&color=2E7D32)](https://github.com/wanshuiyin/HERO-Anti-OverDefense) —— 粘进 `CLAUDE.md` / `AGENTS.md` 的约 550 token 契约,治 agent 过度防御的四种形状(哈希、边界情况、评分表、过度建设);约束它*提议什么*,不约束它*找什么*。
-- [![Anti-Autoresearch](https://img.shields.io/github/stars/wanshuiyin/Anti-Autoresearch?style=flat&logo=github&logoColor=white&label=Anti-Autoresearch&color=B71C1C)](https://github.com/wanshuiyin/Anti-Autoresearch) —— 61 个诚信信号汇成一份确定性的、审稿人能直接用的报告;做的是造假取证,不是 AI 文本检测。
-- [![ARIS-Movie-Director](https://img.shields.io/github/stars/wanshuiyin/ARIS-Movie-Director?style=flat&logo=github&logoColor=white&label=ARIS-Movie-Director&color=6A1B9A)](https://github.com/wanshuiyin/ARIS-Movie-Director) —— **ARIS 走向多模态**:给一个粗略故事,产出一部逐格讲述的定格电影,每一幕都由另一个模型审过;同一套流程也画干净的方法图(`/method-figure`)。
-- [![ARIS-Anything](https://img.shields.io/github/stars/wanshuiyin/ARIS-Anything?style=flat&logo=github&logoColor=white&label=ARIS-Anything&color=E65100)](https://github.com/wanshuiyin/ARIS-Anything) —— 把五步 loop(计划 · 起草 · 对抗审 · 迭代 · 持久化)用到任何结构化研究:投资尽调、法律、市场、自驱学习、工程复盘。
-- [![ARIS-Monitor](https://img.shields.io/badge/ARIS--Monitor-built--in-455A64?style=flat&logo=apple&logoColor=white)](aris-monitor/) —— 常驻置顶的 macOS 小窗,哪个会话在等你批准就亮 🔴,点一下跳过去;`cd aris-monitor && ./run.sh`。窗口多的话,[Claude Fleet](https://github.com/tianyilt/claude-fleet)(by [@tianyilt](https://github.com/tianyilt))是完整看板。
+[![ARIS-in-AI-Offer](https://img.shields.io/github/stars/wanshuiyin/ARIS-in-AI-Offer?style=flat&logo=github&logoColor=white&label=ARIS-in-AI-Offer&color=1E88E5)](https://github.com/wanshuiyin/ARIS-in-AI-Offer) —— **EasyAIOffer**:34 篇双语 ML / LLM 面试 cheat sheet [一页收齐](https://wanshuiyin.github.io/ARIS-in-AI-Offer/):公式推导、从零 PyTorch、每篇 25 题(L1 / L2 / L3),全部由 `/render-html` 生成。希望大家秋招轻松一点 🌱
+
+[![HERO](https://img.shields.io/github/stars/wanshuiyin/HERO-Anti-OverDefense?style=flat&logo=github&logoColor=white&label=HERO&color=2E7D32)](https://github.com/wanshuiyin/HERO-Anti-OverDefense) —— 粘进 `CLAUDE.md` / `AGENTS.md` 的约 550 token 契约,治 agent 过度防御的四种形状(哈希、边界情况、评分表、过度建设);约束它*提议什么*,不约束它*找什么*。
+
+[![Anti-Autoresearch](https://img.shields.io/github/stars/wanshuiyin/Anti-Autoresearch?style=flat&logo=github&logoColor=white&label=Anti-Autoresearch&color=B71C1C)](https://github.com/wanshuiyin/Anti-Autoresearch) —— 61 个诚信信号汇成一份确定性的、审稿人能直接用的报告;做的是造假取证,不是 AI 文本检测。
+
+[![ARIS-Movie-Director](https://img.shields.io/github/stars/wanshuiyin/ARIS-Movie-Director?style=flat&logo=github&logoColor=white&label=ARIS-Movie-Director&color=6A1B9A)](https://github.com/wanshuiyin/ARIS-Movie-Director) —— **ARIS 走向多模态**:给一个粗略故事,产出一部逐格讲述的定格电影,每一幕都由另一个模型审过;同一套流程也画干净的方法图(`/method-figure`)。
+
+[![ARIS-Anything](https://img.shields.io/github/stars/wanshuiyin/ARIS-Anything?style=flat&logo=github&logoColor=white&label=ARIS-Anything&color=E65100)](https://github.com/wanshuiyin/ARIS-Anything) —— 把五步 loop(计划 · 起草 · 对抗审 · 迭代 · 持久化)用到任何结构化研究:投资尽调、法律、市场、自驱学习、工程复盘。
+
+[![ARIS-Monitor](https://img.shields.io/badge/ARIS--Monitor-built--in-455A64?style=flat&logo=apple&logoColor=white)](aris-monitor/) —— 常驻置顶的 macOS 小窗,哪个会话在等你批准就亮 🔴,点一下跳过去;`cd aris-monitor && ./run.sh`。窗口多的话,[Claude Fleet](https://github.com/tianyilt/claude-fleet)(by [@tianyilt](https://github.com/tianyilt))是完整看板。
 
 <details>
 <summary><b>🖼️ 预览</b> —— Claude Fleet 网页看板 &amp; ARIS-Monitor 悬浮小窗(自带)</summary>
