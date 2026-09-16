@@ -26,7 +26,7 @@
 
 [![ARIS-Monitor](https://img.shields.io/badge/ARIS--Monitor-built--in-455A64?style=flat&logo=apple&logoColor=white)](aris-monitor/) —— 常驻置顶的 macOS 小窗,哪个会话在等你批准就亮 🔴,点一下跳过去;`cd aris-monitor && ./run.sh`。窗口多的话,[Claude Fleet](https://github.com/tianyilt/claude-fleet)(by [@tianyilt](https://github.com/tianyilt))是完整看板。
 
-🔥 [**ARIS-Code CLI — 独立安装版**](docs/ARIS-Code-README_CN.md) · [English](docs/ARIS-Code-README_EN.md) | [⬇️ 下载](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/releases/latest) — **v0.4.25**：codex-cli ≥ 0.154 上 Codex 审稿恢复可用（内建 `codex exec` 桥接，无需任何注册）；`/since` 回到你上一次输入的地方；`/resume` 按序号列出会话；Windows 多行粘贴修复（待确认）；内置 83 个 skill，reviewer 为 GPT-6-Astra。
+🔥 [**ARIS-Code CLI — 独立安装版**](docs/ARIS-Code-README_CN.md) · [English](docs/ARIS-Code-README_EN.md) | [⬇️ 下载](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/releases/latest) — **v0.4.26**：`fable` 别名与 `/model` 现指向 Fable 5.1（默认仍是 Opus 5）。v0.4.25：codex-cli ≥ 0.154 上 Codex 审稿恢复可用（内建 `codex exec` 桥接，无需任何注册）；`/since` 回到你上一次输入的地方；`/resume` 按序号列出会话；Windows 多行粘贴修复（待确认）；内置 83 个 skill，reviewer 为 GPT-6-Astra。
 
 <details><summary>ARIS-Code —— 截图、头条、逐版本详情、更早版本</summary>
 
