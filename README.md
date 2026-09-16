@@ -26,17 +26,6 @@
 - [![ARIS-Monitor](https://img.shields.io/badge/ARIS--Monitor-built--in-455A64?style=flat&logo=apple&logoColor=white)](aris-monitor/) — a tiny always-on-top macOS widget that lights up 🔴 when a session waits for your approval; `cd aris-monitor && ./run.sh`. Many windows? [Claude Fleet](https://github.com/tianyilt/claude-fleet) by [@tianyilt](https://github.com/tianyilt) is the full dashboard.
 
 <details>
-<summary>🎞️ <i>A few frames from the reference movie — the story's own integrity beat: a run that <b>reported <code>+6.2</code></b> but <b>really moved <code>+1.4</code></b>.</i> &nbsp;<b><a href="https://wanshuiyin.github.io/ARIS-Movie-Director/comic/">▶ watch all 19 scenes →</a></b></summary>
-
-<table><tr>
-<td width="33%"><a href="https://wanshuiyin.github.io/ARIS-Movie-Director/comic/"><img src="https://raw.githubusercontent.com/wanshuiyin/ARIS-Movie-Director/main/docs/preview_audit.webp" alt="ARIS-Movie-Director frame — the evaluator-integrity audit page" width="100%"></a></td>
-<td width="33%"><a href="https://wanshuiyin.github.io/ARIS-Movie-Director/comic/"><img src="https://raw.githubusercontent.com/wanshuiyin/ARIS-Movie-Director/main/docs/preview_panels.webp" alt="ARIS-Movie-Director frame — a multi-panel scene" width="100%"></a></td>
-<td width="33%"><a href="https://wanshuiyin.github.io/ARIS-Movie-Director/comic/"><img src="https://raw.githubusercontent.com/wanshuiyin/ARIS-Movie-Director/main/docs/preview_fix.webp" alt="ARIS-Movie-Director frame — the integrity beat (reported +6.2, really moved +1.4)" width="100%"></a></td>
-</tr></table>
-
-</details>
-
-<details>
 <summary><b>🖼️ Preview</b> — Claude Fleet dashboard (full web) &amp; ARIS-Monitor widget (minimal, built-in)</summary>
 
 <table align="center" width="100%">

@@ -26,17 +26,6 @@
 - [![ARIS-Monitor](https://img.shields.io/badge/ARIS--Monitor-built--in-455A64?style=flat&logo=apple&logoColor=white)](aris-monitor/) —— 常驻置顶的 macOS 小窗,哪个会话在等你批准就亮 🔴,点一下跳过去;`cd aris-monitor && ./run.sh`。窗口多的话,[Claude Fleet](https://github.com/tianyilt/claude-fleet)(by [@tianyilt](https://github.com/tianyilt))是完整看板。
 
 <details>
-<summary>🎞️ <i>参考片里的几帧 —— 故事自身的诚实度 beat：一次 <b>号称 <code>+6.2</code></b> 实则 <b>只动了 <code>+1.4</code></b> 的 run。</i> &nbsp;<b><a href="https://wanshuiyin.github.io/ARIS-Movie-Director/comic/">▶ 浏览器看全部 19 个场景 →</a></b></summary>
-
-<table><tr>
-<td width="33%"><a href="https://wanshuiyin.github.io/ARIS-Movie-Director/comic/"><img src="https://raw.githubusercontent.com/wanshuiyin/ARIS-Movie-Director/main/docs/preview_audit.webp" alt="ARIS-Movie-Director 帧 —— evaluator 诚实度审计页" width="100%"></a></td>
-<td width="33%"><a href="https://wanshuiyin.github.io/ARIS-Movie-Director/comic/"><img src="https://raw.githubusercontent.com/wanshuiyin/ARIS-Movie-Director/main/docs/preview_panels.webp" alt="ARIS-Movie-Director 帧 —— 多格场景" width="100%"></a></td>
-<td width="33%"><a href="https://wanshuiyin.github.io/ARIS-Movie-Director/comic/"><img src="https://raw.githubusercontent.com/wanshuiyin/ARIS-Movie-Director/main/docs/preview_fix.webp" alt="ARIS-Movie-Director 帧 —— 诚实度 beat（号称 +6.2，实际只动了 +1.4）" width="100%"></a></td>
-</tr></table>
-
-</details>
-
-<details>
 <summary><b>🖼️ 预览</b> —— Claude Fleet 网页看板 &amp; ARIS-Monitor 悬浮小窗(自带)</summary>
 
 <table align="center" width="100%">
