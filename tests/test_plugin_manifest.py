@@ -29,3 +29,12 @@ def test_setup_registers_the_bridge_under_the_hardcoded_server_name():
     assert 'claude mcp add codex -s user -- python3 "${CLAUDE_PLUGIN_ROOT}/mcp-servers/codex-exec/server.py"' in text
     assert "~/.aris/repo" in text
     assert (REPO / "mcp-servers" / "codex-exec" / "server.py").is_file()
+
+
+def test_codex_manifest_points_at_the_codex_mirror():
+    # Codex CLI prefers .codex-plugin/plugin.json and must get the spawn_agent
+    # mirror, never the mainline skills that call mcp__codex__codex
+    p = json.loads((REPO / ".codex-plugin" / "plugin.json").read_text())
+    assert p["name"] == "aris"
+    assert p["skills"] == "./skills/skills-codex/"
+    assert "version" not in p
