@@ -10,7 +10,7 @@
 
 🌱 *ARIS 是方法论，不是平台。重要的是科研工作流——带着它去任何地方。*
 
-💡 *在 [Claude Code](https://docs.anthropic.com/en/docs/claude-code) / [Codex CLI](skills/skills-codex/) / [Cursor](docs/CURSOR_ADAPTATION.md) / [Trae](docs/TRAE_ARIS_RUNBOOK_CN.md) / [Antigravity](docs/ANTIGRAVITY_ADAPTATION_CN.md) / [GitHub Copilot CLI](docs/COPILOT_CLI_ADAPTATION.md) / [OpenClaw](docs/OPENCLAW_ADAPTATION.md) / [DeepSeek Harness](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/blob/dsh-aris/README_CN.md) 里以 skill-based workflow 用 ARIS——任你选！执行者干活，另一个独立模型（默认 Codex MCP）审稿；[替代模型组合](#alternative-model-combinations)（包括 [ModelScope](docs/MODELSCOPE_GUIDE.md) 上托管的模型）不需要 Claude 或 OpenAI API。*
+💡 *在 [Claude Code](https://docs.anthropic.com/en/docs/claude-code) / [Codex CLI](skills/skills-codex/) / [Cursor](docs/CURSOR_ADAPTATION.md) / [Trae](docs/TRAE_ARIS_RUNBOOK_CN.md) / [Antigravity](docs/ANTIGRAVITY_ADAPTATION_CN.md) / [GitHub Copilot CLI](docs/COPILOT_CLI_ADAPTATION.md) / [OpenClaw](docs/OPENCLAW_ADAPTATION.md) / [DeepSeek Harness](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/blob/dsh-aris/README_CN.md) 里以 skill-based workflow 用 ARIS——任你选！*<br>*执行者干活，另一个独立模型（默认 Codex MCP）审稿。[替代模型组合](#alternative-model-combinations)（包括 [ModelScope](docs/MODELSCOPE_GUIDE.md) 上托管的模型）不需要 Claude 或 OpenAI API。*
 
 📦 *上面是直接安装 skills 的用法。想一条命令装好?ARIS 也提供独立 CLI 和插件:* [![ARIS-Code CLI 下载量](https://img.shields.io/github/downloads/wanshuiyin/Auto-claude-code-research-in-sleep/total?style=flat&logo=rust&logoColor=white&label=ARIS-Code%20%E7%8B%AC%E7%AB%8B%20CLI&color=2E7D32)](docs/ARIS-Code-README_CN.md) · [![Claude Code plugin](https://img.shields.io/badge/Claude_Code-plugin-D97757?style=flat&logo=anthropic&logoColor=white)](#plugins) · [![Codex CLI plugin](https://img.shields.io/badge/Codex_CLI-plugin-000000?style=flat&logo=openai&logoColor=white)](#plugins) · [![DeepSeek Harness plugin](https://img.shields.io/badge/DeepSeek_Harness-dsh--aris-4D6BFE?style=flat)](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/blob/dsh-aris/README_CN.md)
 
@@ -18,7 +18,7 @@
 
 **🧩 ARIS 家族** —— 同一套方法,干别的活。每个一行,细节在各自仓库。
 
-[![ARIS-in-AI-Offer](https://img.shields.io/github/stars/wanshuiyin/ARIS-in-AI-Offer?style=flat&logo=github&logoColor=white&label=ARIS-in-AI-Offer&color=1E88E5)](https://github.com/wanshuiyin/ARIS-in-AI-Offer) —— **EasyAIOffer**:34 篇双语 ML / LLM 面试 cheat sheet [一页收齐](https://wanshuiyin.github.io/ARIS-in-AI-Offer/):公式推导、从零 PyTorch、每篇 25 题(L1 / L2 / L3),全部由 `/render-html` 生成。希望大家秋招轻松一点 🌱
+[![ARIS-in-AI-Offer](https://img.shields.io/github/stars/wanshuiyin/ARIS-in-AI-Offer?style=flat&logo=github&logoColor=white&label=ARIS-in-AI-Offer&color=1E88E5)](https://github.com/wanshuiyin/ARIS-in-AI-Offer) —— **EasyAIOffer**:34 篇双语 ML / LLM 面试 cheat sheet [一页收齐](https://wanshuiyin.github.io/ARIS-in-AI-Offer/)——公式推导、从零 PyTorch、每篇 25 题。希望大家秋招轻松一点 🌱
 
 [![HERO](https://img.shields.io/github/stars/wanshuiyin/HERO-Anti-OverDefense?style=flat&logo=github&logoColor=white&label=HERO&color=2E7D32)](https://github.com/wanshuiyin/HERO-Anti-OverDefense) · [![Anti-Autoresearch](https://img.shields.io/github/stars/wanshuiyin/Anti-Autoresearch?style=flat&logo=github&logoColor=white&label=Anti-Autoresearch&color=B71C1C)](https://github.com/wanshuiyin/Anti-Autoresearch) —— 一种病的两面。HERO:粘进 `CLAUDE.md` / `AGENTS.md` 的约 550 token 契约,治 agent 过度防御的四种形状(哈希、边界情况、评分表、过度建设),约束它*提议什么*,不约束它*找什么*。Anti-Autoresearch:61 个诚信信号汇成一份确定性的、审稿人能直接用的报告——造假取证,不是 AI 文本检测。
 
