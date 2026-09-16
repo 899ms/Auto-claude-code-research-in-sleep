@@ -26,20 +26,6 @@
 - [![ARIS-Monitor](https://img.shields.io/badge/ARIS--Monitor-built--in-455A64?style=flat&logo=apple&logoColor=white)](aris-monitor/) — a tiny always-on-top macOS widget that lights up 🔴 when a session waits for your approval; `cd aris-monitor && ./run.sh`. Many windows? [Claude Fleet](https://github.com/tianyilt/claude-fleet) by [@tianyilt](https://github.com/tianyilt) is the full dashboard.
 
 <details>
-<summary>🖼️ <b>Previews</b> — Movie-Director method figure &amp; reference frames · Claude Fleet dashboard &amp; ARIS-Monitor widget</summary>
-
-<details>
-<summary>🗺️ <b>Method figure</b> — story brief → authored source of truth → per-panel audited spiral → assembly &amp; release, on one canvas</summary>
-
-<p align="center">
-  <a href="https://github.com/wanshuiyin/ARIS-Movie-Director">
-    <img src="docs/aris-movie-director-method.png" alt="ARIS-Movie-Director method — the audited spiral: authored source of truth (asset library · outline · storyboard · comic.json) → per-panel image_gen + cross-model panel_gate (blind token-diff, single-vote veto) → research-wiki audit trace → assembly + release" width="100%">
-  </a>
-</p>
-
-</details>
-
-<details>
 <summary>🎞️ <i>A few frames from the reference movie — the story's own integrity beat: a run that <b>reported <code>+6.2</code></b> but <b>really moved <code>+1.4</code></b>.</i> &nbsp;<b><a href="https://wanshuiyin.github.io/ARIS-Movie-Director/comic/">▶ watch all 19 scenes →</a></b></summary>
 
 <table><tr>
@@ -67,8 +53,6 @@
 <td align="center"><b><a href="aris-monitor/">ARIS-Monitor</a></b> · 极简悬浮小窗(自带)</td>
 </tr>
 </table>
-
-</details>
 
 </details>
 
