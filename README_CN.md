@@ -18,7 +18,7 @@
 
 **🧩 ARIS 家族** —— 同一套方法,干别的活。每个一行,细节在各自仓库。
 
-- [![ARIS-in-AI-Offer](https://img.shields.io/github/stars/wanshuiyin/ARIS-in-AI-Offer?style=flat&logo=github&logoColor=white&label=ARIS-in-AI-Offer&color=1E88E5)](https://github.com/wanshuiyin/ARIS-in-AI-Offer) —— 34 篇双语 ML / LLM 面试 cheat sheet [一页收齐](https://wanshuiyin.github.io/ARIS-in-AI-Offer/):公式推导、从零 PyTorch、每篇 25 题(L1 / L2 / L3),全部由 `/render-html` 生成。希望大家秋招轻松一点 🌱
+- [![ARIS-in-AI-Offer](https://img.shields.io/github/stars/wanshuiyin/ARIS-in-AI-Offer?style=flat&logo=github&logoColor=white&label=ARIS-in-AI-Offer&color=1E88E5)](https://github.com/wanshuiyin/ARIS-in-AI-Offer) —— **EasyAIOffer**:34 篇双语 ML / LLM 面试 cheat sheet [一页收齐](https://wanshuiyin.github.io/ARIS-in-AI-Offer/):公式推导、从零 PyTorch、每篇 25 题(L1 / L2 / L3),全部由 `/render-html` 生成。希望大家秋招轻松一点 🌱
 - [![HERO](https://img.shields.io/github/stars/wanshuiyin/HERO-Anti-OverDefense?style=flat&logo=github&logoColor=white&label=HERO&color=2E7D32)](https://github.com/wanshuiyin/HERO-Anti-OverDefense) —— 粘进 `CLAUDE.md` / `AGENTS.md` 的约 550 token 契约,治 agent 过度防御的四种形状(哈希、边界情况、评分表、过度建设);约束它*提议什么*,不约束它*找什么*。
 - [![Anti-Autoresearch](https://img.shields.io/github/stars/wanshuiyin/Anti-Autoresearch?style=flat&logo=github&logoColor=white&label=Anti-Autoresearch&color=B71C1C)](https://github.com/wanshuiyin/Anti-Autoresearch) —— 61 个诚信信号汇成一份确定性的、审稿人能直接用的报告;做的是造假取证,不是 AI 文本检测。
 - [![ARIS-Movie-Director](https://img.shields.io/github/stars/wanshuiyin/ARIS-Movie-Director?style=flat&logo=github&logoColor=white&label=ARIS-Movie-Director&color=6A1B9A)](https://github.com/wanshuiyin/ARIS-Movie-Director) —— **ARIS 走向多模态**:给一个粗略故事,产出一部逐格讲述的定格电影,每一幕都由另一个模型审过;同一套流程也画干净的方法图(`/method-figure`)。
